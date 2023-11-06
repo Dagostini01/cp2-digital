@@ -1,7 +1,11 @@
 package br.com.cp2digital.dto;
 
-public record UserDto() {
-    String username,
-    String password,
-    UserRo
+import br.com.cp2digital.model.UserRole;
+
+public record UserDto(
+        String username,
+        String password,
+        UserRole roles
+) {
+
 }
