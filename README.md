@@ -17,7 +17,7 @@ Certifique-se de ter instalado:
 ## Instalação
 
 1. Clone o repositório: `git clone https://github.com/Dagostini01/cp2-digital.git`
-2. Navegue até o diretório do projeto: `cd seu-projeto`
+2. Navegue até o diretório do projeto: `cd cp2-digital`
 3. Execute o aplicativo: `mvn spring-boot:run`
 
 ## Configuração
