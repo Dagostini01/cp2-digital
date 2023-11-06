@@ -1,5 +1,6 @@
 package br.com.cp2digital.model;
 
+import br.com.cp2digital.dto.CreateTaskDto;
 import jakarta.persistence.Entity;
 import lombok.Data;
 
@@ -15,7 +16,13 @@ public class Task {
     private Date dueDate;
     private Boolean isActive;
 
-    public Task(CreateTaskDto data)
+    public Task(CreateTaskDto data){
+        this.title = data.title();
+        this.description = data.description();
+        this.dueDate = data.dueDate();
+        this.status = false;
+        this.isActive = true;
+    }
     public Task(){}
 }
 
