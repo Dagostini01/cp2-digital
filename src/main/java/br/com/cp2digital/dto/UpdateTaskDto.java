@@ -1,6 +1,7 @@
 package br.com.cp2digital.dto;
 
-import org.antlr.v4.runtime.misc.NotNull;
+
+import jakarta.validation.constraints.NotNull;
 
 import java.util.Date;
 

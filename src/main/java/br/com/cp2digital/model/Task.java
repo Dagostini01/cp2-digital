@@ -1,14 +1,17 @@
 package br.com.cp2digital.model;
 
 import br.com.cp2digital.dto.CreateTaskDto;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
 
 @Entity
 @Data
+@Table
 public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String title;
     private String description;
